@@ -540,15 +540,15 @@
     <div class="player-card" onclick="enlargeCard(this)">
       <div class="player-top">
         <div class="player-rating">
-          <span class="ovr">88</span>
-          <span class="pos">8 MAN</span>
+          <span class="ovr">90</span>
+          <span class="pos">Loose Forward</span>
         </div>
         <div class="player-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Player silhouette">
         </div>
       </div>
       <div class="player-info">
-        <h3>Kosco Austin</h3>
+        <h3>Austin Kosco</h3>
         <ul>
           <li><strong>Height:</strong> 6'4"</li>
           <li><strong>Weight:</strong> 215 lbs</li>
