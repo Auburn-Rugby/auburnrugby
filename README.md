@@ -5,51 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auburn University Rugby Football Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
-      color: #1e1e1e;
-    }
-    header {
-      background-color: #0c2340; /* Auburn blue */
-      color: #ff8200; /* Auburn orange */
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.25rem;
-      color: #ffffff;
-    }
-    nav {
-      background-color: #13294b;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem 0;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section h2 {
-      color: #0c2340;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+  }
+
+  header {
+    background-color: #0c2340;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #ff8200;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  nav a {
+    color: #0c2340;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+</style>
+
   </style>
 </head>
 <body>
@@ -80,7 +77,7 @@
       <tr>
         <td>Saturday, September 20, 2025</td>
         <td>
-          <img src="images/UK%20Rugby%20logo.png" alt="UK Logo" />
+          <img src="images/uk-rugby-logo.png" alt="UK Logo" />
           University of Kentucky
         </td>
         <td>Away</td>
@@ -88,7 +85,7 @@
       <tr>
         <td>Saturday, September 27, 2025</td>
         <td>
-          <img src="images/Bama%20Rugby%20Logog.jpg" alt="Bama Logo" />
+          <img src="images/bama-rugby-logo.jpg" alt="Bama Logo" />
           University of Alabama
         </td>
         <td>Home</td>
