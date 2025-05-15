@@ -513,10 +513,49 @@
 </style>
 
 
-  <section id="training-schedule">
-    <h2>Fall 2025 Training Schedule</h2>
-    <p>Coming soon...</p>
-  </section>
+<section class="bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold text-orange-600 dark:text-orange-400 mb-6">
+      Training Schedule
+    </h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">
+          Tuesday & Thursday
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          6:00 PM – 8:00 PM<br />
+          <a
+            href="https://www.google.com/maps/place/Auburn+University+Sportsplex/@32.5917557,-85.5038935,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:underline"
+          >
+            Auburn University Sportsplex
+          </a><br />
+          811 Lem Morrison Dr
+        </p>
+      </div>
+
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">
+          Wednesday
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          6:00 PM – 7:00 PM<br />
+          <a
+            href="https://www.google.com/maps/place/Biggio+Dr,+Auburn,+AL+36832/@32.5988057,-85.4949093,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:underline"
+          >
+            Intramural Fields, Biggio Dr
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="coaching-staff">
     <h2>Coaching Staff 2025</h2>
