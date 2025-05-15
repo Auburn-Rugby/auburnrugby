@@ -46,8 +46,6 @@
     padding: 2rem;
   }
 </style>
-
-  </style>
 </head>
 <body>
   <header>
