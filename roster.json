@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Kosco Austin",
+    "position": "8 MAN",
+    "height": "6'4\"",
+    "weight": "215",
+    "major": "Sports Exercise Science",
+    "class": "Senior",
+    "hometown": "Colorado Springs, CO",
+    "rating": 88,
+    "image": "images/silhouette.png"
+  },
+  {
+    "name": "Campbell Brady",
+    "position": "PROP",
+    "height": "6'0\"",
+    "weight": "227",
+    "major": "BS - Analytics",
+    "class": "Junior",
+    "hometown": "Brookeville, MD",
+    "rating": 85,
+    "image": "images/silhouette.png"
+  },
+  {
+    "name": "Williams Miles",
+    "position": "LOCK",
+    "height": "6'5\"",
+    "weight": "253",
+    "major": "Biomedical Sciences - PreMed",
+    "class": "Junior",
+    "hometown": "Homewood, AL",
+    "rating": 90,
+    "image": "images/silhouette.png"
+  }
+]
