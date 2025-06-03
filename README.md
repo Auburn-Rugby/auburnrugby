@@ -717,5 +717,10 @@
     <h2>Contact Information</h2>
     <p>Coming soon...</p>
   </section>
+
+    <section id="sponsors">
+    <h2>Sponsors</h2>
+    <p>Proud supporters and sponsors of AURFC Coming soon...</p>
+  </section>
 </body>
 </html>
