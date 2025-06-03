@@ -526,14 +526,14 @@
         <p class="text-gray-600 dark:text-gray-300">
           6:00 PM – 8:00 PM<br />
           <a
-            href="https://www.google.com/maps/place/Auburn+University+Sportsplex/@32.5917557,-85.5038935,17z"
+            href="https://www.google.com/maps/place/Auburn+Sportsplex/@32.5917557,-85.5038935,17z/data=!4m6!3m5!1s0x888cf312b01fcca3:0x9162ef00e15a0a56!8m2!3d32.5926701!4d-85.4981982!16s%2Fg%2F11l22gk8kj?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
             Auburn University Sportsplex
           </a><br />
-          811 Lem Morrison Dr
+          811 Lem Morrison Dr, Auburn, AL 36832
         </p>
       </div>
 
@@ -544,13 +544,14 @@
         <p class="text-gray-600 dark:text-gray-300">
           6:00 PM – 7:00 PM<br />
           <a
-            href="https://www.google.com/maps/place/Biggio+Dr,+Auburn,+AL+36832/@32.5988057,-85.4949093,17z"
+            href="https://www.google.com/maps/place/Intramural+Field/@32.5960971,-85.4969333,17z/data=!3m1!4b1!4m6!3m5!1s0x888cf30b086c89cb:0x14ad13b099d52f4e!8m2!3d32.5960971!4d-85.4969333!16s%2Fg%2F11c74btr9c?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
-            Intramural Fields, Biggio Dr
-          </a>
+          Auburn University Intramural Fields
+          </a><br />
+          530 Biggio Dr, Auburn, AL 36832
         </p>
       </div>
     </div>
