@@ -59,6 +59,7 @@
     <a href="#officers">Officers</a>
     <a href="#roster">Roster</a>
     <a href="#contact">Contact</a>
+    <a href="#sponsors">Sponsors</a>
   </nav>
 
 <section id="match-schedule">
