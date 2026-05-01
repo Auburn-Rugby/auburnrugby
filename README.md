@@ -74,66 +74,72 @@
     </thead>
     <tbody>
       <tr>
-        <td>Saturday, September 20, 2025</td>
+        <td>August 29, 2026</td>
         <td>
-          <img src="images/uk-rugby-logo.png" alt="UK Logo" />
-          University of Kentucky
+          TBD
         </td>
         <td>Away</td>
       </tr>
       <tr>
-        <td>Saturday, September 27, 2025</td>
+        <td>September 4/5, 2026</td>
         <td>
-          <img src="images/bama-rugby-logo.jpg" alt="Bama Logo" />
-          University of Alabama
+          TBD
         </td>
-        <td>Home</td>
+        <td>TBD</td>
       </tr>
       <tr>
-        <td>Saturday, October 4, 2025</td>
+        <td>September 11/12, 2026</td>
         <td>
-          <img src="images/LSU%20Rugby%20logo.jpg" alt="LSU Logo" />
-          Louisiana State University
+         <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
+        TBD
+        </td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>September 25/26, 2026</td>
+        <td>
+       <img src="images/SCRC%20logo.webp" alt="SCRC Logo" /> 
+          TBD
+        </td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>October 2, 2026</td>
+        <td>
+          <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
+          Tennessee
         </td>
         <td>Away</td>
       </tr>
       <tr>
-        <td>Saturday, October 25, 2025</td>
-        <td>
-          <img src="images/KSU%20Rugby%20logo.png" alt="KSU Logo" />
-          Kennesaw State University
-        </td>
-        <td>Home</td>
-      </tr>
-      <tr>
-        <td>Saturday, November 1, 2025</td>
+        <td>October 16/17, 2026</td>
         <td>
           <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
-          SCRC Playoff
+          TBD
         </td>
         <td>TBD</td>
       </tr>
       <tr>
-        <td>Saturday, November 8, 2025</td>
+        <td>October 23/24, 2026</td>
         <td>
-          <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
-          SCRC Final
+         <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
+          TBD
+        </td>
+        <td>TBD</td>
+      </tr>
+        <tr>
+        <td>October 30/31, 2026</td>
+        <td>
+         <img src="images/SCRC%20logo.webp" alt="SCRC Logo" />
+          TBD
         </td>
         <td>TBD</td>
       </tr>
       <tr>
-        <td>Saturday, November 15, 2025</td>
+        <td>Saturday, November 7, 2026</td>
         <td>
           <img src="images/NCR_Logo%20-%20Full%20Color.png" alt="NCR Logo" />
-          NCR Playoffs
-        </td>
-        <td>TBD</td>
-      </tr>
-      <tr>
-        <td>Saturday, November 22, 2025</td>
-        <td>
-          <img src="images/NCR_Logo%20-%20Full%20Color.png" alt="NCR Logo" />
-          NCR Playoffs
+          TBD
         </td>
         <td>TBD</td>
       </tr>
