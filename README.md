@@ -576,8 +576,8 @@
     <div class="player-card" onclick="enlargeCard(this)">
       <div class="player-top">
         <div class="player-rating">
-          <span class="ovr">90</span>
-          <span class="pos">Loose Forward</span>
+          <span class="ovr">82</span>
+          <span class="pos">Lock</span>
         </div>
         <div class="player-image">
           <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Player silhouette">
