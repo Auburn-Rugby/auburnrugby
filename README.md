@@ -584,13 +584,13 @@
         </div>
       </div>
       <div class="player-info">
-        <h3>Austin Kosco</h3>
+        <h3>Miles Williams</h3>
         <ul>
           <li><strong>Height:</strong> 6'4"</li>
-          <li><strong>Weight:</strong> 215 lbs</li>
-          <li><strong>Major:</strong> Sports Exercise Science</li>
+          <li><strong>Weight:</strong> 235 lbs</li>
+          <li><strong>Major:</strong> Pre-Med</li>
           <li><strong>Class:</strong> Senior</li>
-          <li><strong>Hometown:</strong> Colorado Springs, CO</li>
+          <li><strong>Hometown:</strong> Homewood, AL</li>
         </ul>
       </div>
     </div>
