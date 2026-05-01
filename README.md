@@ -566,7 +566,12 @@
 
   <section id="officers">
     <h2>Executive Officers 2025</h2>
-    <p>Coming soon...</p>
+    <p>President: Ryan Burns - Prop, Junior</p>
+    <p>Treasurer: Thorin Slinkard - Center, Senior</p>
+    <p>Vice President: Gabe Pullen - Wing, Junior</p>
+    <p>Social Chair: Will Locke - Fly Half, Senior</p>
+    <p>Warden: Kevin Corso - Mr. Backline, Senior</p>
+    <p>Chaplain: Ian Gordon - Hooker, Senior</p>
   </section>
 
 <section id="team-roster">
