@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Auburn University Rugby Football Club</title>
+  <title>Auburn University Rugby Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
@@ -49,7 +49,7 @@
 </head>
 <body>
   <header>
-    <h1>Auburn University Rugby Football Club</h1>
+    <h1>Auburn University Rugby Club</h1>
     <p>War Damn Rugby!</p>
   </header>
   <nav>
