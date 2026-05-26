@@ -1,0 +1,92 @@
+[
+  {
+    "team": "Auburn A",
+    "opponent": "Alabama",
+    "scoreUs": 12,
+    "scoreThem": 26,
+    "result": "Loss",
+    "type": "Pool A - Premier Side 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/alabama-logo.jpg",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+  ]
+  },
+  {
+    "team": "Auburn A",
+    "opponent": "USC A",
+    "scoreUs": 10,
+    "scoreThem": 17,
+    "result": "Loss",
+    "type": "Pool A - Premier Side 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/USC-logo.png",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+  ]
+  },
+  {
+    "team": "Auburn B",
+    "opponent": "Team Big E",
+    "scoreUs": 5,
+    "scoreThem": 22,
+    "result": "Loss",
+    "type": "Pool B - Developmental 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/USC-logo.png",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+    ]
+  },
+  {
+    "team": "Auburn B",
+    "opponent": "USC B",
+    "scoreUs": 0,
+    "scoreThem": 50,
+    "result": "Loss",
+    "type": "Pool B - Developmental 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/USC-logo.png",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+    ]
+  },
+  {
+    "team": "Auburn B",
+    "opponent": "UGA B",
+    "scoreUs": 10,
+    "scoreThem": 17,
+    "result": "Loss",
+    "type": "3rd Place Match - Developmental 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/uga-logo.png",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+    ]
+  },
+  {
+    "team": "Auburn A",
+    "opponent": "UGA A",
+    "scoreUs": 5,
+    "scoreThem": 19,
+    "result": "Loss",
+    "type": "5th Place Match - Premier Side 7's",
+    "location": "Bolden Stadium",
+    "date": "March 28, 2026",
+    "image": "images/uga-logo.png",
+    "playerStats": [
+    { "name": "Will Locke", "tries": 1, "conversions": 0 },
+    { "name": "Brady Campbell", "tries": 1, "conversions": 0 }
+    ]
+  }
+]

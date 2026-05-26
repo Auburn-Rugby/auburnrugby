@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auburn University Rugby Football Club</title>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts used by the current design -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- =========================
+       HEADER
+       ========================= -->
+  <div class="site-header" id="site-header">
+  <header class="top-bar">
+    <div class="top-bar-container">
+      <div class="logo-section">
+        <img src="images/logo.png" alt="Auburn Rugby logo" />
+      </div>
+
+      <div class="title-section">
+        <h1 class="top-title">Auburn University Rugby Football Club</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       MAIN NAVIGATION
+       ========================= -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-links">
+      <a href="#upcoming-games">Games</a>
+      <a href="#training-schedule">Training</a>
+      <a href="#coaching-staff">Coaches</a>
+      <a href="#roster">Roster</a>
+      <a href="#contact">Contact</a>
+      <a href="#sponsors">Sponsors</a>
+    </div>
+
+    <div class="nav-social">
+      <a href="https://www.instagram.com/auburnrugby" target="_blank" rel="noopener noreferrer" class="ig-icon">
+        <img src="images/IG.png" alt="Instagram logo" />
+      </a>
+      <a href="https://www.youtube.com/@AuburnRugby-t1y" target="_blank" rel="noopener noreferrer" class="yt-icon">
+        <img src="images/YT.png" alt="YouTube logo" />
+      </a>
+    </div>
+  </nav>
+  </div>
+
+  <main>
+    <!-- =========================
+         HERO
+         ========================= -->
+    <section class="hero">
+      <div class="hero-container hero-video-full">
+        <div class="hero-image">
+          <!-- Poster image remains the same. The JavaScript hero-video logic is kept
+               intact and safely does nothing unless a #hero-video element exists. -->
+          <img src="images/Team.jpeg" alt="Auburn Rugby" class="hero-poster" id="hero-poster" />
+
+          <div class="hero-overlay">
+            <h1>Auburn Rugby</h1>
+            <h3>D1-AA • Southeastern Collegiate Rugby Conference</h3>
+            <p>2021 &amp; 2022 SCRC D2 Conference Champions • 2021 ACR/SCRC Men's D2 National Champions</p>
+            <p class="hero-meta">Auburn, Alabama • Established in 1973</p>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-primary">Join the Team</a>
+              <a href="#upcoming-games" class="btn-secondary">View Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">↓</div>
+    </section>
+
+<!-- =========================
+   NEXT MATCH COUNTDOWN
+========================= -->
+    <section id="next-match" class="next-match-section">
+      <div class="next-match-card" id="next-match-card">
+        <span class="next-match-label">Next Match</span>
+
+        <div class="next-match-opponent" id="next-match-opponent">
+          Upcoming match coming soon
+        </div>
+
+        <div class="next-match-grid">
+          <div class="next-match-box">
+            <span class="next-match-number" id="countdown-days">--</span>
+            <span class="next-match-unit">Days</span>
+          </div>
+
+          <div class="next-match-box">
+            <span class="next-match-number" id="countdown-hours">--</span>
+            <span class="next-match-unit">Hours</span>
+          </div>
+
+          <div class="next-match-box">
+            <span class="next-match-number" id="countdown-minutes">--</span>
+            <span class="next-match-unit">Minutes</span>
+          </div>
+
+          <div class="next-match-box">
+            <span class="next-match-number" id="countdown-seconds">--</span>
+            <span class="next-match-unit">Seconds</span>
+          </div>
+        </div>
+
+        <p class="next-match-meta" id="next-match-meta">
+          Date and time will appear here
+        </p>
+      </div>
+    </section>
+    <!-- =========================
+         UPCOMING GAMES
+         ========================= -->
+    <section id="upcoming-games" class="section-block">
+      <div class="section-header">
+        <h2>Upcoming Games</h2>
+        <p class="section-subtitle">Check out the next matches, times, and locations.</p>
+      </div>
+
+      <!-- Filled dynamically by script.js -->
+      <div id="upcoming-games-container" class="upcoming-games-grid"></div>
+    </section>
+
+    <!-- =========================
+         PREVIOUS GAMES
+         ========================= -->
+    <section id="previous-games" class="section-block">
+      <div class="section-header">
+        <h2>Previous Games</h2>
+        <p class="section-subtitle">Check out the results from our recent matches.</p>
+      </div>
+
+      <!-- Filled dynamically by script.js -->
+      <div id="previous-games-container" class="upcoming-games-grid"></div>
+    </section>
+
+    <!-- =========================
+         PREVIOUS GAME MODAL
+         ========================= -->
+    <div class="game-modal" id="game-modal" aria-hidden="true">
+      <div class="game-modal-backdrop" id="game-modal-backdrop"></div>
+      <div class="game-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="game-modal-title">
+        <button class="game-modal-close" id="game-modal-close" aria-label="Close game details" type="button">
+          &times;
+        </button>
+
+        <!-- Filled dynamically when a previous-game card is opened -->
+        <div class="game-modal-content" id="game-modal-content"></div>
+      </div>
+    </div>
+
+    <!-- =========================
+         OPTIONAL LEGACY SCHEDULE TABLE
+         Kept commented because the existing app currently comments it out,
+         but the JavaScript still supports it if restored.
+         ========================= -->
+    <!--
+    <section id="match-schedule">
+      <h2>Fall 2025 Match Schedule</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Opponent</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </section>
+    -->
+
+    <!-- =========================
+         TRAINING SCHEDULE
+         ========================= -->
+    <section id="training-schedule" class="section-block">
+      <div class="section-header">
+        <h2>Training Schedule</h2>
+        <p class="section-subtitle">
+          Join us at training throughout the week. Check the location and map for each session.
+        </p>
+      </div>
+
+      <!-- Filled dynamically by script.js -->
+      <div id="training-container" class="training-grid"></div>
+    </section>
+
+    <!-- =========================
+         COACHING STAFF
+         Coach details are stored in data-* attributes and read by script.js.
+         ========================= -->
+    <section id="coaching-staff" class="section-block">
+      <div class="section-header">
+        <h2>Coaching Staff 2026</h2>
+        <p class="section-subtitle">Leadership on and off the pitch.</p>
+      </div>
+
+      <div class="coach-shell">
+        <article
+          class="player-card coach-card-horizontal coach-card"
+          id="head-coach-card"
+          tabindex="0"
+          role="button"
+          data-name="Dale Hartmann"
+          data-role="Head Coach"
+          data-image="images/players/silhouette.png"
+          data-experience="10+ Years Coaching"
+          data-specialty="Player Development"
+          data-hometown="TBD"
+          data-bio="Dale Hartmann leads Auburn Rugby with a focus on development, discipline, and competitive excellence."
+        >
+          <div class="player-image-wrap coach-image-wrap">
+            <img src="images/players/silhouette.png" alt="Dale Hartmann" class="player-image coach-image" />
+          </div>
+
+          <div class="player-card-body coach-card-body">
+            <h3 class="player-name coach-name">Dale Hartmann</h3>
+            <p class="player-position coach-role">Head Coach</p>
+
+            <div class="player-card-preview coach-preview">
+              <span><strong>Experience:</strong> 10+ Years</span>
+              <span><strong>Academics:</strong> Ph.D. Student in Biosystems Engineering</span>
+            </div>
+
+            <p class="player-card-hint">Click for full profile</p>
+          </div>
+        </article>
+
+        <article
+          class="player-card coach-card-horizontal coach-card"
+          id="assistant-coach-1-card"
+          tabindex="0"
+          role="button"
+          data-name="Jonathan Belmontes"
+          data-role="Assistant Coach"
+          data-image="images/players/silhouette.png"
+          data-experience="TBD"
+          data-specialty="Attack"
+          data-hometown="TBD"
+          data-bio="Jonathan Belmontes works closely with the backs and attacking systems."
+        >
+          <div class="player-image-wrap coach-image-wrap">
+            <img src="images/players/silhouette.png" alt="Jonathan Belmontes" class="player-image coach-image" />
+          </div>
+
+          <div class="player-card-body coach-card-body">
+            <h3 class="player-name coach-name">Jonathan Belmontes</h3>
+            <p class="player-position coach-role">Assistant Coach</p>
+
+            <div class="player-card-preview coach-preview">
+              <span><strong>Experience:</strong> TBD</span>
+              <span><strong>Academics:</strong> TBD</span>
+            </div>
+
+            <p class="player-card-hint">Click for full profile</p>
+          </div>
+        </article>
+
+        <article
+          class="player-card coach-card-horizontal coach-card"
+          id="assistant-coach-2-card"
+          tabindex="0"
+          role="button"
+          data-name="Sam Parks"
+          data-role="Assistant Coach"
+          data-image="images/players/silhouette.png"
+          data-experience="TBD"
+          data-specialty="Defense"
+          data-hometown="TBD"
+          data-bio="Sam Parks focuses on defensive structure and player development within the program."
+          aria-label="View details for Sam Parks"
+        >
+          <div class="player-image-wrap coach-image-wrap">
+            <img src="images/players/silhouette.png" alt="Sam Parks" class="player-image coach-image" />
+          </div>
+
+          <div class="player-card-body coach-card-body">
+            <h3 class="player-name coach-name">Sam Parks</h3>
+            <p class="player-position coach-role">Assistant Coach</p>
+
+            <div class="player-card-preview coach-preview">
+              <span><strong>Experience:</strong> TBD</span>
+              <span><strong>Academics:</strong> TBD</span>
+            </div>
+
+            <p class="player-card-hint">Click for full profile</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+         OFFICERS
+         Kept commented to preserve the current live structure.
+         ========================= -->
+    <!--
+    <section id="officers">
+      <h2>Executive Officers 2026</h2>
+      <p>Coming soon...</p>
+    </section>
+    -->
+
+    <!-- =========================
+         ROSTER PREVIEW
+         The home page shows a smaller, randomized player carousel.
+         ========================= -->
+    <section id="roster" class="section-block">
+      <div class="section-header">
+        <h2>Team Roster</h2>
+      </div>
+
+      <div class="roster-home-actions">
+        <a href="Roster.html" class="view-roster-btn">View Full Roster →</a>
+      </div>
+
+      <div class="roster-shell">
+        <div class="player-carousel" id="roster-container"></div>
+      </div>
+    </section>
+
+    <!-- Player modal used by both the home page roster preview and the full roster page -->
+    <div class="player-modal" id="player-modal" aria-hidden="true">
+      <div class="player-modal-backdrop" id="player-modal-backdrop"></div>
+
+      <div class="player-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="player-modal-name">
+        <button class="player-modal-close" id="player-modal-close" aria-label="Close player details" type="button">
+          &times;
+        </button>
+
+        <div class="player-modal-content" id="player-modal-content"></div>
+      </div>
+    </div>
+
+    <!-- Coach modal uses the same visual shell as the player modal -->
+    <div class="player-modal" id="coach-modal" aria-hidden="true">
+      <div class="player-modal-backdrop" id="coach-modal-backdrop"></div>
+
+      <div class="player-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="coach-modal-name">
+        <button class="player-modal-close" id="coach-modal-close" aria-label="Close coach details" type="button">
+          &times;
+        </button>
+
+        <div class="player-modal-content" id="coach-modal-content"></div>
+      </div>
+    </div>
+
+    <!-- =========================
+         CONTACT
+         Two separate AJAX forms:
+         - Player interest form
+         - Sponsor/partnership form
+         ========================= -->
+    <section id="contact" class="section-block">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p class="section-subtitle">Get involved with Auburn Rugby.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Join the Team</h2>
+          <p>Interested in playing? Fill this out and we’ll reach out.</p>
+
+          <form id="player-contact-form" action="https://formspree.io/f/xgorejrr" method="POST">
+            <input type="hidden" name="type" value="player" />
+
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="year" placeholder="Year (Freshman, etc.)" />
+            <input type="text" name="experience" placeholder="Rugby Experience" />
+
+            <textarea name="message" placeholder="Tell us about yourself"></textarea>
+
+            <button type="submit">Join Auburn Rugby</button>
+          </form>
+        </div>
+
+        <div class="contact-card">
+          <h2>Sponsorship &amp; Partnerships</h2>
+          <p>Interested in supporting Auburn Rugby?</p>
+
+          <form id="sponsor-contact-form" action="https://formspree.io/f/xjgjvqzk" method="POST">
+            <input type="hidden" name="type" value="sponsor" />
+
+            <input type="text" name="name" placeholder="Contact Name" required />
+            <input type="text" name="company" placeholder="Company Name" />
+            <input type="email" name="email" placeholder="Email" required />
+
+            <textarea name="message" placeholder="Tell us about your interest"></textarea>
+
+            <button type="submit">Become a Sponsor</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success modal opened by the AJAX contact-form logic -->
+    <div class="contact-success-modal" id="contact-success-modal" aria-hidden="true">
+      <div class="contact-success-backdrop"></div>
+      <div class="contact-success-box">
+        <h3>Thank you!</h3>
+        <p>Your information has been submitted successfully.</p>
+        <button type="button" id="contact-success-close">Close</button>
+      </div>
+    </div>
+
+    <!-- =========================
+         SPONSORS
+         ========================= -->
+    <section id="sponsors">
+      <h2>Sponsors</h2>
+      <p>Proud supporters and sponsors of AURFC Coming soon...</p>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Auburn University Rugby Football Club. All rights reserved.</p>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/auburnrugby" target="_blank" rel="noopener noreferrer" class="ig-icon">
+          <img src="images/IG.png" alt="Instagram logo" />
+        </a>
+        <a href="https://www.youtube.com/@AuburnRugby-t1y" target="_blank" rel="noopener noreferrer" class="yt-icon">
+          <img src="images/YT.png" alt="YouTube logo" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Site behavior -->
+  <script src="script.js"></script>
+</body>
+</html>

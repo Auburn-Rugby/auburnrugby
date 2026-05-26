@@ -1,0 +1,50 @@
+[
+  {
+    "date": "Saturday, September 20, 2025",
+    "school": "University of Kentucky",
+    "hereaway": "Away",
+    "image": "images/uk-rugby-logo.png"
+  },
+  {
+    "date": "Saturday, September 27, 2025",
+    "school": "University of Alabama",
+    "hereaway": "Home",
+    "image": "images/bama-rugby-logo.jpg"
+  },
+  {
+    "date": "Saturday, October 4, 2025",
+    "school": "Louisiana State University",
+    "hereaway": "Away",
+    "image": "images/LSU%20Rugby%20logo.jpg"
+  },
+  {
+    "date": "Saturday, October 25, 2025",
+    "school": "Kennesaw State University",
+    "hereaway": "Home",
+    "image": "images/KSU%20Rugby%20logo.png"
+  },
+  {
+    "date": "Saturday, November 1, 2025",
+    "school": "SCRC Playoff",
+    "hereaway": "TBD",
+    "image": "images/SCRC%20logo.webp"
+  },
+  {
+    "date": "Saturday, November 8, 2025",
+    "school": "SCRC Final",
+    "hereaway": "TBD",
+    "image": "images/SCRC%20logo.webp"
+  },
+  {
+    "date": "Saturday, November 15, 2025",
+    "school": "NCR Playoffs",
+    "hereaway": "TBD",
+    "image": "images/NCR_Logo%20-%20Full%20Color.png"
+  },
+  {
+    "date": "Saturday, November 22, 2025",
+    "school": "NCR Playoffs",
+    "hereaway": "TBD",
+    "image": "images/NCR_Logo%20-%20Full%20Color.png"
+  }
+]

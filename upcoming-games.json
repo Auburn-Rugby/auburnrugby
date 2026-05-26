@@ -1,0 +1,22 @@
+[
+  {
+    "opponent": "Example Opponent",
+    "type": "Example Match",
+    "date": "Month Day, Year",
+    "time": "00:00 PM",
+    "location": "Example Field",
+    "address": "123 Example St, Auburn, AL 36830",
+    "image": "images/example-logo.png",
+    "example": true
+  },
+  {
+    "opponent": "Spring Hill College",
+    "type": "Away Match",
+    "date": "June 10, 2026",
+    "time": "10:00 AM",
+    "location": "Dorn Field",
+    "address": "4000 Dauphin St, Mobile, AL 36608",
+    "image": "images/Spring-Hill.jpeg",
+    "example": true
+  }
+]

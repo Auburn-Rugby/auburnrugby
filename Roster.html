@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auburn University Rugby Football Club</title>
+
+  <!-- Shared site styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- =========================
+       HEADER
+       ========================= -->
+  <div class="site-header" id="site-header">
+  <header class="top-bar">
+    <div class="top-bar-container">
+      <a href="Home.html" class="logo-section" aria-label="Auburn Rugby home">
+        <img src="images/logo.png" alt="Auburn Rugby logo" loading="eager" />
+      </a>
+
+      <div class="title-section">
+        <h1 class="top-title">Auburn University Rugby Football Club</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       NAVIGATION
+       This page intentionally keeps an empty nav-links container to match the
+       existing structure and styling while still showing social links.
+       ========================= -->
+  <nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-links">
+    <a href="Home.html#upcoming-games">Games</a>
+    <a href="Home.html#training-schedule">Training</a>
+    <a href="Home.html#coaching-staff">Coaches</a>
+    <a href="Roster.html#roster">Roster</a>
+    <a href="Home.html#contact">Contact</a>
+    <a href="Home.html#sponsors">Sponsors</a>
+  </div>
+    <div class="nav-social">
+      <a
+        href="https://www.instagram.com/auburnrugby"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ig-icon"
+        aria-label="Visit Auburn Rugby on Instagram"
+      >
+        <img src="images/IG.png" alt="" loading="lazy" />
+      </a>
+
+      <a
+        href="https://www.youtube.com/@AuburnRugby-t1y"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="yt-icon"
+        aria-label="Visit Auburn Rugby on YouTube"
+      >
+        <img src="images/YT.png" alt="" loading="lazy" />
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================
+         FULL ROSTER PAGE
+         The container below is filled dynamically by script.js.
+         The toolbar controls search, filtering, sorting, and reset behavior.
+         ========================= -->
+    <section id="roster" class="section-block roster-page-section">
+      <div class="section-header">
+        <h2>Team Roster</h2>
+        <p class="section-subtitle">Browse the full squad, search players, and filter by position or class.</p>
+      </div>
+
+      <div class="roster-toolbar">
+        <div class="roster-toolbar-left">
+          <input
+            type="text"
+            id="roster-search"
+            class="roster-search"
+            placeholder="Search by name, hometown, major, or position"
+            aria-label="Search roster"
+          />
+
+          <select id="position-filter" class="roster-filter" aria-label="Filter by position">
+            <option value="all">All Positions</option>
+          </select>
+
+          <select id="class-filter" class="roster-filter" aria-label="Filter by class">
+            <option value="all">All Classes</option>
+          </select>
+
+          <select id="sort-filter" class="roster-filter" aria-label="Sort roster">
+            <option value="name-asc">Sort: Name A–Z</option>
+            <option value="name-desc">Sort: Name Z–A</option>
+            <option value="class-asc">Sort: Class</option>
+            <option value="position-asc">Sort: Position</option>
+            <option value="hometown-asc">Sort: Hometown</option>
+          </select>
+
+          <button id="reset-filters" class="roster-reset-btn" type="button">Reset</button>
+        </div>
+
+        <div class="roster-toolbar-right">
+          <div class="roster-count" id="roster-count">0 Players</div>
+        </div>
+      </div>
+
+      <!-- Filled dynamically by script.js -->
+      <div id="roster-container" class="player-grid"></div>
+    </section>
+  </main>
+
+  <!-- =========================
+       PLAYER MODAL
+       Opened when a player card is clicked or keyboard-activated.
+       ========================= -->
+  <div class="player-modal" id="player-modal" aria-hidden="true">
+    <div class="player-modal-backdrop" id="player-modal-backdrop"></div>
+
+    <div class="player-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="player-modal-name">
+      <button
+        class="player-modal-close"
+        id="player-modal-close"
+        aria-label="Close player details"
+        type="button"
+      >
+        &times;
+      </button>
+
+      <div class="player-modal-content" id="player-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Shared site behavior -->
+  <script src="script.js"></script>
+</body>
+</html>
