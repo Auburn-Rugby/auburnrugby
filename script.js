@@ -780,7 +780,12 @@ function initRoster(players) {
 
         card.innerHTML = `
           <div class="player-image-wrap">
-            <img src="${player.image}" alt="${fullName}" class="player-image" />
+            <img 
+              src="${player.image || 'images/players/silhouette.jpeg'}" 
+              alt="${fullName}" 
+              class="player-image"
+              onerror="this.onerror=null; this.src='images/players/silhouette.jpeg';"
+            />
           </div>
 
           <div class="player-card-body">
