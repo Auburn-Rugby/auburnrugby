@@ -7,8 +7,7 @@
     "weight": "145",
     "major": "Philanthropy and Nonprofit Studies",
     "class": "Sophomore",
-    "hometown": "Atlanta, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "Atlanta, GA"
   },
   {
     "fname": "Clay",
@@ -18,8 +17,7 @@
     "weight": "200",
     "major": "Information Systems Management",
     "class": "Sophomore",
-    "hometown": "Glen Ellyn, IL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Glen Ellyn, IL"
   },
   {
     "fname": "Thorin",
@@ -29,8 +27,7 @@
     "weight": "195",
     "major": "Aerospace Engineering",
     "class": "Junior",
-    "hometown": "Hannibal, MO",
-    "image": "images/players/silhouette.png"
+    "hometown": "Hannibal, MO"
   },
   {
     "fname": "Max",
@@ -40,8 +37,7 @@
     "weight": "190",
     "major": "Finance",
     "class": "Junior",
-    "hometown": "Atlanta, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "Atlanta, GA"
   },
   {
     "fname": "Matthew",
@@ -51,8 +47,7 @@
     "weight": "205",
     "major": "Accounting",
     "class": "Senior",
-    "hometown": "McDonough, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "McDonough, GA"
   },
   {
     "fname": "Collin",
@@ -62,8 +57,7 @@
     "weight": "185",
     "major": "Chemical engineering",
     "class": "",
-    "hometown": "Darien, CT",
-    "image": "images/players/silhouette.png"
+    "hometown": "Darien, CT"
   },
   {
     "fname": "Isaac",
@@ -73,8 +67,7 @@
     "weight": "165",
     "major": "Software Engineering",
     "class": "Senior",
-    "hometown": "Houston, TX",
-    "image": "images/players/silhouette.png"
+    "hometown": "Houston, TX"
   },
   {
     "fname": "Miles",
@@ -84,8 +77,7 @@
     "weight": "250",
     "major": "Biomedical Sciences",
     "class": "Senior",
-    "hometown": "Homewood, AL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Homewood, AL"
   },
   {
     "fname": "Griffin",
@@ -95,8 +87,7 @@
     "weight": "210",
     "major": "Mechanical Engineering",
     "class": "Junior",
-    "hometown": "Memphis, TN",
-    "image": "images/players/silhouette.png"
+    "hometown": "Memphis, TN"
   },
   {
     "fname": "Benjamin",
@@ -106,8 +97,7 @@
     "weight": "147",
     "major": "Electrical engineering",
     "class": "Freshman",
-    "hometown": "Madison, AL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Madison, AL"
   },
   {
     "fname": "Kaarthik",
@@ -117,8 +107,7 @@
     "weight": "185",
     "major": "Information systems Management",
     "class": "Freshman",
-    "hometown": "Johns Creek, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "Johns Creek, GA"
   },
   {
     "fname": "Dakota",
@@ -128,8 +117,7 @@
     "weight": "183",
     "major": "Business Management and Entrepreneurship",
     "class": "Junior",
-    "hometown": "Auburn, AL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Auburn, AL"
   },
   {
     "fname": "George",
@@ -139,8 +127,7 @@
     "weight": "180",
     "major": "Finance & Real Estate",
     "class": "Junior",
-    "hometown": "Palos Heights, IL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Palos Heights, IL"
   },
   {
     "fname": "James",
@@ -150,8 +137,7 @@
     "weight": "210",
     "major": "Mechanical Engineering",
     "class": "Sophomore",
-    "hometown": "Glen Ellyn, IL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Glen Ellyn, IL"
   },
   {
     "fname": "Nic",
@@ -161,8 +147,7 @@
     "weight": "190",
     "major": "Aerospace Engineering",
     "class": "Junior",
-    "hometown": "Florence, AL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Florence, AL"
   },
   {
     "fname": "Ryan",
@@ -172,8 +157,7 @@
     "weight": "270",
     "major": "Computer Engineering",
     "class": "Junior",
-    "hometown": "Ellerslie, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "Ellerslie, GA"
   },
   {
     "fname": "Ryan",
@@ -183,8 +167,7 @@
     "weight": "145",
     "major": "German",
     "class": "Senior",
-    "hometown": "Blythewood, SC",
-    "image": "images/players/silhouette.png"
+    "hometown": "Blythewood, SC"
   },
   {
     "fname": "Davis",
@@ -194,8 +177,7 @@
     "weight": "170",
     "major": "Agricultural Science",
     "class": "Senior",
-    "hometown": "Auburn, AL",
-    "image": "images/players/silhouette.png"
+    "hometown": "Auburn, AL"
   },
   {
     "fname": "Samuel",
@@ -205,8 +187,7 @@
     "weight": "185",
     "major": "Forestry",
     "class": "Junior",
-    "hometown": "McDonough, GA",
-    "image": "images/players/silhouette.png"
+    "hometown": "McDonough, GA"
   },
   {
     "fname": "Kevin",
@@ -216,8 +197,7 @@
     "weight": "185",
     "major": "Communications",
     "class": "Senior",
-    "hometown": "Philadelphia, PA",
-    "image": "images/players/silhouette.png"
+    "hometown": "Philadelphia, PA"
   },
   {
     "fname": "Patrick",
@@ -227,8 +207,7 @@
     "weight": "170",
     "major": "Professional Flight",
     "class": "Sophomore",
-    "hometown": "Baltimore, MD",
-    "image": "images/players/silhouette.png"
+    "hometown": "Baltimore, MD"
   },
   {
     "fname": "Zach",
@@ -238,8 +217,7 @@
     "weight": "150",
     "major": "Business Analytics",
     "class": "Senior",
-    "hometown": "Charlotte, NC",
-    "image": "images/players/silhouette.png"
+    "hometown": "Charlotte, NC"
   },
   {
     "fname": "Will",
@@ -249,7 +227,6 @@
     "weight": "150",
     "major": "Computer Science",
     "class": "Senior",
-    "hometown": "Auburn, AL",
-    "image": "images/players/silhouette.jpeg"
+    "hometown": "Auburn, AL"
   }
 ]
