@@ -439,6 +439,19 @@ function openPlayerModal(player) {
     </div>
   `;
 
+  const modalImage = modalContent.querySelector('.player-modal-image');
+
+  if (modalImage) {
+    modalImage.addEventListener('error', () => {
+      if (modalImage.dataset.fallbackOne) {
+        modalImage.src = modalImage.dataset.fallbackOne;
+        modalImage.dataset.fallbackOne = '';
+      } else if (modalImage.dataset.fallbackTwo) {
+        modalImage.src = modalImage.dataset.fallbackTwo;
+        modalImage.dataset.fallbackTwo = '';
+      }
+    });
+  }
   // Each game button inside the player modal opens the matching game modal.
   modalContent.querySelectorAll('[data-game-team]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -563,18 +576,6 @@ function openGameModal(game) {
       </div>
     </div>
   `;
-
-  const modalImage = modalContent.querySelector('.player-modal-image');
-  
-  modalImage.addEventListener('error', () => {
-    if (modalImage.dataset.fallbackOne) {
-      modalImage.src = modalImage.dataset.fallbackOne;
-      modalImage.dataset.fallbackOne = '';
-    } else if (modalImage.dataset.fallbackTwo) {
-      modalImage.src = modalImage.dataset.fallbackTwo;
-      modalImage.dataset.fallbackTwo = '';
-    }
-  });
   // Clicking a player in the game modal reuses the roster data map to open
   // that player profile modal.
   modalContent.querySelectorAll('[data-player-name]').forEach((button) => {
