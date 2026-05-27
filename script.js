@@ -332,6 +332,7 @@ function closeCoachModal() {
  * - wires each game card inside the player modal so it can open the game modal
  */
 function openPlayerModal(player) {
+  const imageCandidates = getPlayerImageCandidates(player);
   const modal = getById('player-modal');
   const modalContent = getById('player-modal-content');
   if (!modal || !modalContent || !player) return;
@@ -372,7 +373,13 @@ function openPlayerModal(player) {
     <div class="player-modal-layout">
       <div class="player-modal-top">
         <div class="player-modal-image-wrap">
-          <img src="${player.image}" alt="${fullName}" class="player-modal-image">
+          <img 
+            src="${imageCandidates[0]}" 
+            alt="${fullName}" 
+            class="player-modal-image"
+            data-fallback-one="${imageCandidates[1]}"
+            data-fallback-two="${imageCandidates[2]}"
+          >
         </div>
 
         <div class="player-modal-info">
@@ -484,6 +491,7 @@ function openGameModal(game) {
   const opponentWon = game.scoreThem > game.scoreUs;
 
   modalContent.innerHTML = `
+  
     <div class="game-modal-header">
       <div>
         <p class="game-modal-kicker">Previous Game</p>
@@ -556,6 +564,17 @@ function openGameModal(game) {
     </div>
   `;
 
+  const modalImage = modalContent.querySelector('.player-modal-image');
+  
+  modalImage.addEventListener('error', () => {
+    if (modalImage.dataset.fallbackOne) {
+      modalImage.src = modalImage.dataset.fallbackOne;
+      modalImage.dataset.fallbackOne = '';
+    } else if (modalImage.dataset.fallbackTwo) {
+      modalImage.src = modalImage.dataset.fallbackTwo;
+      modalImage.dataset.fallbackTwo = '';
+    }
+  });
   // Clicking a player in the game modal reuses the roster data map to open
   // that player profile modal.
   modalContent.querySelectorAll('[data-player-name]').forEach((button) => {
@@ -595,6 +614,22 @@ function closeGameModal() {
  * - the full roster page with filters/search/sort
  * - the home page mini-carousel version
  */
+function getPlayerImageBaseName(player) {
+  return `${player.fname || ''}${player.lname || ''}`
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function getPlayerImageCandidates(player) {
+  const baseName = getPlayerImageBaseName(player);
+
+  return [
+    `images/players/${baseName}.png`,
+    `images/players/${baseName}.jpeg`,
+    `images/players/silhouette.png`
+  ];
+}
+
 function initRoster(players) {
   const container = getById('roster-container');
   if (!container) return;
@@ -778,13 +813,16 @@ function initRoster(players) {
         card.setAttribute('role', 'button');
         card.setAttribute('aria-label', `View details for ${fullName}`);
 
+        const imageCandidates = getPlayerImageCandidates(player);
+        
         card.innerHTML = `
           <div class="player-image-wrap">
             <img 
-              src="${player.image || 'images/players/silhouette.jpeg'}" 
+              src="${imageCandidates[0]}" 
               alt="${fullName}" 
               class="player-image"
-              onerror="this.onerror=null; this.src='images/players/silhouette.jpeg';"
+              data-fallback-one="${imageCandidates[1]}"
+              data-fallback-two="${imageCandidates[2]}"
             />
           </div>
 
@@ -802,6 +840,18 @@ function initRoster(players) {
           </div>
         `;
 
+        const playerImage = card.querySelector('.player-image');
+
+        playerImage.addEventListener('error', () => {
+          if (playerImage.dataset.fallbackOne) {
+            playerImage.src = playerImage.dataset.fallbackOne;
+            playerImage.dataset.fallbackOne = '';
+          } else if (playerImage.dataset.fallbackTwo) {
+            playerImage.src = playerImage.dataset.fallbackTwo;
+            playerImage.dataset.fallbackTwo = '';
+          }
+        });
+        
         addCardActivation(card, () => openPlayerModal(player));
         container.appendChild(card);
       });
