@@ -16,6 +16,19 @@
 const MODAL_CLOSE_DELAY_MS = 320;
 const MODAL_SWITCH_DELAY_MS = 220;
 
+// =========================
+// EXECUTIVE OFFICER ASSIGNMENTS
+// =========================
+// Names must match fname + lname in roster.json.
+
+const EXECUTIVE_OFFICER_ASSIGNMENTS = [
+  { role: 'President', playerName: 'Ryan Burns' },
+  { role: 'Vice President', playerName: 'Gabe Pullen' },
+  { role: 'Treasurer', playerName: 'Thorin Slickard' },
+  { role: 'Warden', playerName: 'Kevin Corso' },
+  { role: 'Social Chair', playerName: 'Will Locke' },
+  { role: 'Chaplain', playerName: 'Ian Gordon' }
+];
 
 // Shared in-memory data stores. These are filled once JSON files load.
 let allRosterPlayers = [];
@@ -629,6 +642,113 @@ function getPlayerImageCandidates(player) {
     `images/players/${baseName}.jpeg`,
     `images/players/silhouette.png`
   ];
+}
+
+// =========================
+// EXECUTIVE OFFICERS
+// =========================
+
+function initExecutiveOfficers() {
+  const container = getById('executive-officers-container');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  EXECUTIVE_OFFICER_ASSIGNMENTS.forEach((assignment) => {
+    const playerKey = makePlayerKeyFromFullName(assignment.playerName);
+    const player = playerMap.get(playerKey);
+
+    // Show a setup message when a name is missing or does not match.
+    if (!player) {
+      const missingCard = document.createElement('div');
+      missingCard.className = 'executive-officer-missing';
+
+      missingCard.innerHTML = `
+        <strong>${assignment.role}</strong>
+        <span>
+          ${
+            assignment.playerName
+              ? `No roster player matched "${assignment.playerName}".`
+              : 'Add this officer’s roster name in script.js.'
+          }
+        </span>
+      `;
+
+      container.appendChild(missingCard);
+      return;
+    }
+
+    const fullName = `${player.fname} ${player.lname}`;
+    const imageCandidates = getPlayerImageCandidates(player);
+
+    const card = document.createElement('article');
+
+    card.className = 'player-card executive-officer-card';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute(
+      'aria-label',
+      `View ${assignment.role} ${fullName}'s profile`
+    );
+
+    card.innerHTML = `
+      <p class="executive-officer-role">${assignment.role}</p>
+
+      <div class="player-image-wrap">
+        <img
+          src="${imageCandidates[0]}"
+          alt="${fullName}"
+          class="player-image"
+          data-fallback-one="${imageCandidates[1]}"
+          data-fallback-two="${imageCandidates[2]}"
+        />
+      </div>
+
+      <div class="player-card-body">
+        <h3 class="player-name">${fullName}</h3>
+
+        <p class="player-position position-tag position-default">
+          ${player.position || 'Player'}
+        </p>
+
+        <div class="player-card-preview">
+          <span>
+            <strong>Class:</strong>
+            ${player.class || 'TBD'}
+          </span>
+
+          <span>
+            <strong>Hometown:</strong>
+            ${player.hometown || 'TBD'}
+          </span>
+
+          <span>
+            <strong>Major:</strong>
+            ${player.major || 'TBD'}
+          </span>
+        </div>
+
+        <p class="player-card-hint">Click for full profile</p>
+      </div>
+    `;
+
+    const playerImage = card.querySelector('.player-image');
+
+    playerImage.addEventListener('error', () => {
+      if (playerImage.dataset.fallbackOne) {
+        playerImage.src = playerImage.dataset.fallbackOne;
+        playerImage.dataset.fallbackOne = '';
+      } else if (playerImage.dataset.fallbackTwo) {
+        playerImage.src = playerImage.dataset.fallbackTwo;
+        playerImage.dataset.fallbackTwo = '';
+      }
+    });
+
+    // Reuse the existing player profile modal.
+    addCardActivation(card, () => openPlayerModal(player));
+
+    container.appendChild(card);
+  });
 }
 
 function initRoster(players) {
@@ -1508,6 +1628,7 @@ Promise.all([
   buildPlayerSeasonStats(allPreviousGames);
 
   initRoster(allRosterPlayers);
+  initExecutiveOfficers();
   initPreviousGames(allPreviousGames);
 });
 

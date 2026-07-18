@@ -1088,6 +1088,117 @@ table {
 }
 
 /* =========================
+   EXECUTIVE OFFICERS
+   ========================= */
+
+.executive-officers-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.executive-officers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.executive-officer-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid rgba(12, 35, 64, 0.18);
+  box-shadow: 0 14px 34px rgba(12, 35, 64, 0.13);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.executive-officer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 2;
+  height: 5px;
+  background: #f26522;
+}
+
+.executive-officer-card:hover,
+.executive-officer-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: #f26522;
+  box-shadow: 0 20px 42px rgba(12, 35, 64, 0.2);
+}
+
+.executive-officer-role {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 0.75rem;
+  background: #0c2340;
+  color: white;
+  border-bottom: 3px solid #f26522;
+  font-family: "Bebas Neue", "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.executive-officer-card .player-image-wrap {
+  border-radius: 0;
+}
+
+.executive-officer-card .player-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.executive-officer-card .player-card-hint {
+  margin-top: auto;
+}
+
+.executive-officer-missing {
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  border: 2px dashed rgba(12, 35, 64, 0.3);
+  border-radius: 14px;
+  background: rgba(12, 35, 64, 0.04);
+  text-align: center;
+}
+
+.executive-officer-missing strong {
+  color: #0c2340;
+  font-size: 1.1rem;
+}
+
+.executive-officer-missing span {
+  margin-top: 0.5rem;
+  color: #5b6470;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .executive-officers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .executive-officers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
    ROSTER
 ========================= */
 
