@@ -24,7 +24,7 @@ const MODAL_SWITCH_DELAY_MS = 220;
 const EXECUTIVE_OFFICER_ASSIGNMENTS = [
   { role: 'President', playerName: 'Ryan Burns' },
   { role: 'Vice President', playerName: 'Gabe Pullen' },
-  { role: 'Treasurer', playerName: 'Thorin Slickard' },
+  { role: 'Treasurer', playerName: 'Thorin Slinkard' },
   { role: 'Warden', playerName: 'Kevin Corso' },
   { role: 'Social Chair', playerName: 'Will Locke' },
   { role: 'Chaplain', playerName: 'Ian Gordon' }

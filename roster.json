@@ -228,5 +228,25 @@
     "major": "Computer Science",
     "class": "Senior",
     "hometown": "Auburn, AL"
+  },
+  {
+    "fname": "Gabe",
+    "lname": "Pullen",
+    "position": "N/A",
+    "height": "N/A",
+    "weight": "N/A",
+    "major": "Management",
+    "class": "Sophomore",
+    "hometown": "N/A"
+  },
+  {
+    "fname": "Ian",
+    "lname": "Gordon",
+    "position": "N/A",
+    "height": "N/A",
+    "weight": "N/A",
+    "major": "Pre-Med",
+    "class": "Senior",
+    "hometown": "N/A"
   }
 ]
