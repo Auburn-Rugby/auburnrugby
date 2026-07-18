@@ -1,15 +1,8 @@
 [
   {
-    "date": "Mondays & Wednesdays",
-    "time": "6:00 PM - 8:00 PM",
+    "date": "Tuesdays, Wednesdays, and Thursdays",
+    "time": "6:15 PM - 8:00 PM",
     "location": "Auburn University Sportsplex",
     "address": "811 Lem Morrison Dr, Auburn, AL 36832"
-  },
-  {
-    "date": "Thursdays",
-    "time": "6:00 PM - 8:00 PM",
-    "location": "Auburn University Intramural Fields",
-    "address": "530 Biggio Dr, Auburn, AL 36832",
-    "mapsQuery": "32.594111, -85.497278"
   }
 ]
