@@ -13,7 +13,7 @@
     "opponent": "Southeastern Louisiana",
     "type": "Neutral Match",
     "date": "August 29, 2026",
-    "time": "TBA",
+    "time": "12:00 PM",
     "location": "Battleship Park",
     "address": "Mobile, AL",
     "image": "images/Southeastern-Louisiana.png",
@@ -73,10 +73,10 @@
     "opponent": "University of Georgia",
     "type": "Home Match",
     "date": "October 30, 2026",
-    "time": "TBA",
+    "time": "12:00 PM",
     "location": "Auburn, AL",
     "address": "Auburn, AL",
-    "image": "images/Georgia.png",
+    "image": "images/uga-logo.png",
     "example": false
   },
   {
