@@ -10,13 +10,83 @@
     "example": true
   },
   {
-    "opponent": "Spring Hill College",
+    "opponent": "Southeastern Louisiana",
+    "type": "Neutral Match",
+    "date": "August 29, 2026",
+    "time": "TBA",
+    "location": "Battleship Park",
+    "address": "Mobile, AL",
+    "image": "images/Southeastern-Louisiana.png",
+    "example": false
+  },
+  {
+    "opponent": "University of Memphis",
     "type": "Away Match",
-    "date": "June 10, 2026",
-    "time": "10:00 AM",
-    "location": "Dorn Field",
-    "address": "4000 Dauphin St, Mobile, AL 36608",
-    "image": "images/Spring-Hill.jpeg",
-    "example": true
+    "date": "September 12, 2026",
+    "time": "TBA",
+    "location": "Memphis, TN",
+    "address": "Memphis, TN",
+    "image": "images/Memphis.png",
+    "example": false
+  },
+  {
+    "opponent": "University of Florida",
+    "type": "Home Match",
+    "date": "September 18, 2026",
+    "time": "TBA",
+    "location": "Auburn, AL",
+    "address": "Auburn, AL",
+    "image": "images/Florida.png",
+    "example": false
+  },
+  {
+    "opponent": "University of Tennessee",
+    "type": "Away Match",
+    "date": "October 3, 2026",
+    "time": "TBA",
+    "location": "Knoxville, TN",
+    "address": "Knoxville, TN",
+    "image": "images/Tennessee.png",
+    "example": false
+  },
+  {
+    "opponent": "Kennesaw State University",
+    "type": "Away Match",
+    "date": "October 17, 2026",
+    "time": "TBA",
+    "location": "Kennesaw, GA",
+    "address": "Kennesaw, GA",
+    "image": "images/Kennesaw-State.png",
+    "example": false
+  },
+  {
+    "opponent": "University of Alabama",
+    "type": "Away Match",
+    "date": "October 23, 2026",
+    "time": "TBA",
+    "location": "Tuscaloosa, AL",
+    "address": "Tuscaloosa, AL",
+    "image": "images/Alabama.png",
+    "example": false
+  },
+  {
+    "opponent": "University of Georgia",
+    "type": "Home Match",
+    "date": "October 30, 2026",
+    "time": "TBA",
+    "location": "Auburn, AL",
+    "address": "Auburn, AL",
+    "image": "images/Georgia.png",
+    "example": false
+  },
+  {
+    "opponent": "Southern Rugby Conference Playoffs",
+    "type": "Neutral Match",
+    "date": "November 21, 2026",
+    "time": "TBA",
+    "location": "Auburn, AL",
+    "address": "Auburn, AL",
+    "image": "images/Southern-Rugby-Conference.png",
+    "example": false
   }
 ]
