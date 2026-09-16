@@ -1101,7 +1101,11 @@ function initUpcomingGames() {
 
     initNextMatchCountdown(games);
 
-    const realGames = (games || []).filter((game) => !game.example);
+    // Skip the template entry and any game that has already finished.
+    const now = Date.now();
+    const realGames = (games || []).filter(
+      (game) => !game.example && isGameStillUpcoming(game, now)
+    );
     const limitedGames = realGames.slice(0, 4);
 
     container.innerHTML = '';
@@ -1181,8 +1185,19 @@ function initUpcomingGames() {
   });
 }
 
-let heroCountdownInterval = null;
+// =========================
+// COUNTDOWN + GAME TIMING
+// =========================
 
+let nextMatchCountdownInterval = null;
+
+// How long a game stays in "Upcoming Games" after kickoff (covers the match itself).
+const GAME_LISTING_GRACE_MS = 2 * 60 * 60 * 1000;
+
+/**
+ * Combine a game's date and time strings into a Date.
+ * Returns null when either is missing or can't be parsed (e.g. "TBA").
+ */
 function parseUpcomingGameDateTime(game) {
   if (!game?.date || !game?.time) return null;
 
@@ -1195,23 +1210,25 @@ function parseUpcomingGameDateTime(game) {
 
   return parsed;
 }
-// =========================
-// COUNTDOWN
-// =========================
 
-let nextMatchCountdownInterval = null;
+/**
+ * Decide whether a game should still appear under "Upcoming Games".
+ * - Known kickoff: listed until 2 hours after kickoff.
+ * - Time is TBA but date is known: listed through the end of that day.
+ * - Date can't be read at all: kept, so a TBD game never silently disappears.
+ */
+function isGameStillUpcoming(game, now = Date.now()) {
+  const kickoff = parseUpcomingGameDateTime(game);
 
-function parseUpcomingGameDateTime(game) {
-  if (!game?.date || !game?.time) return null;
-
-  const combined = `${game.date} ${game.time}`;
-  const parsed = new Date(combined);
-
-  if (Number.isNaN(parsed.getTime())) {
-    return null;
+  if (kickoff) {
+    return kickoff.getTime() + GAME_LISTING_GRACE_MS > now;
   }
 
-  return parsed;
+  const gameDay = new Date(game?.date);
+  if (Number.isNaN(gameDay.getTime())) return true;
+
+  gameDay.setHours(23, 59, 59, 999);
+  return gameDay.getTime() > now;
 }
 
 function formatNextMatchDate(gameDate) {
@@ -1303,6 +1320,7 @@ function initNextMatchCountdown(games) {
 
     if (distance <= 0) {
       nextMatchSection.style.display = 'none';
+      clearInterval(nextMatchCountdownInterval);
       return;
     }
 
@@ -1317,8 +1335,9 @@ function initNextMatchCountdown(games) {
     secondsEl.textContent = String(seconds).padStart(2, '0');
   }
 
+  clearInterval(nextMatchCountdownInterval);
   updateCountdown();
-  setInterval(updateCountdown, 1000);
+  nextMatchCountdownInterval = setInterval(updateCountdown, 1000);
 }
 
 // =========================

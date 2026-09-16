@@ -35,9 +35,13 @@ h1 {
    STACKED HEADER
 ========================= */
 
+/*
+  The wrapper renders no box of its own, so the sticky .main-nav below is
+  positioned against the whole page. Without this, the nav could only stick
+  inside this short wrapper and scrolled away right after the top bar.
+*/
 .site-header {
-  position: relative;
-  z-index: 1000;
+  display: contents;
 }
 
 /* Top brand bar stays normal */
@@ -3593,5 +3597,19 @@ body.modal-open {
   .game-modal-dialog {
     width: calc(100% - 0.5rem);
     margin: 0.25rem auto;
+  }
+}
+/* =========================
+   STICKY NAV FIX
+   overflow-x: hidden on both html and body turns body into its own scroll
+   container, which stops position: sticky from working. "clip" hides
+   sideways overflow the same way without that side effect. Browsers that
+   don't support clip keep the hidden rules above.
+========================= */
+
+@supports (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: clip;
   }
 }
