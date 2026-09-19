@@ -1,2 +1,18 @@
 [
+  {
+    "team": "Auburn Rugby",
+    "opponent": "University of Florida",
+    "type": "Home Match",
+    "date": "September 18, 2026",
+    "location": "Auburn University Sportsplex",
+    "image": "images/Florida.png",
+    "scoreUs": 24,
+    "scoreThem": 22,
+    "result": "Win",
+    "streamUrl": "https://www.youtube.com/watch?v=GkCOgXQ_0aQ",
+    "playerStats": [
+      { "name": "George Cleary", "tries": 3, "conversions": 2 },
+      { "name": "Isaac Summerford", "tries": 1, "conversions": 0 }
+    ]
+  }
 ]

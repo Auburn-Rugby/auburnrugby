@@ -566,6 +566,17 @@ function openGameModal(game) {
       </div>
     </div>
 
+    ${
+      game.streamUrl
+        ? `<a
+            class="game-modal-stream-link"
+            href="${game.streamUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Watch the Live Stream</a>`
+        : ''
+    }
+
     <div class="game-modal-player-stats">
       <h4 class="game-modal-section-title">Player Stats</h4>
       <div class="game-modal-player-grid">

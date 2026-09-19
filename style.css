@@ -1927,6 +1927,22 @@ body.modal-open {
   color: #ffffff;
 }
 
+.game-modal-stream-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: #ff8a1f;
+  color: #0b1f3a;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.game-modal-stream-link:hover,
+.game-modal-stream-link:focus-visible {
+  background: #ffb26f;
+}
+
 /* =========================
    TRAINING SECTION
 ========================= */

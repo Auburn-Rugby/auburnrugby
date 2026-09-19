@@ -30,16 +30,6 @@
     "example": false
   },
   {
-    "opponent": "University of Florida",
-    "type": "Home Match",
-    "date": "September 18, 2026",
-    "time": "6:00 PM",
-    "location": "Auburn University Sportsplex",
-    "address": "811 Lem Morrison Dr, Auburn, AL 36832",
-    "image": "images/Florida.png",
-    "example": false
-  },
-  {
     "opponent": "University of Tennessee",
     "type": "Away Match",
     "date": "October 3, 2026",
